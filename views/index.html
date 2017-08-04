@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Url Shortener | Shahid Kamal</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sh4hidkh4n">
+    <meta name="twitter:title" content="Url Shotener Service | FreeCodeCamp">
+    <meta name="twitter:description" content="Just another url shortener service.">
+    <meta name="theme-color" content="#0D1B2A">
+    <link rel="shortcut icon" href="http://www.favicon-generator.org/download/2010-10-13/50cc9c6db555cb43ceccbf6c21828ed2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <style>
+      body{
+        background-color: #0D1B2A;
+      }
+      .header{
+        background-color: #415A77;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="card-panel header">
+            <h1 class="center white-text">
+              Url Shortener Service
+            </h1>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <div class="card-panel">
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>User Stories</h4></li>
+              <li class="collection-item">I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+              <li class="collection-item">If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+              <li class="collection-item">When I visit that shortened URL, it will redirect me to my original link.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col s12 m12">
+          <div class="card-panel">
+            <h4>Example Usage</h4>
+            <h5>Shortening New Link</h5>
+            <code class="red-text">https://tinylink.glitch.me/url/https://shahidkamal.me</code>
+            <h5>Output</h5>
+            <code class="red-text">{"url":"https://google.com","hash":"3Yq", "shortenLink" : "https://tinylink.glitch.me/3Yq"}</code>
+            <h5>
+              Shortened Link Usage
+            </h5>
+            <code class="red-text">https://tinylink.glitch.me/3Yq" <a href="https://tinylink.glitch.me/3Yq">Open</a></code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
